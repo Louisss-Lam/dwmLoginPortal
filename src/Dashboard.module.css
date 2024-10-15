@@ -1,0 +1,50 @@
+.dashboardContainer {
+    display: grid;
+    grid-template-areas: 
+        "quick-links whats-new client-call"
+        "recommended-material recommended-material top-performer";
+    grid-template-columns: 1fr 2fr 1fr; /* First row ratio: 1:2:1 */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quickLinks {
+    grid-area: quick-links;
+}
+
+.whatsNew {
+    grid-area: whats-new;
+}
+
+.clientCall {
+    grid-area: client-call;
+}
+
+.recommendedMaterial {
+    grid-area: recommended-material;
+    grid-column: span 2; /* Span 2 columns to match the ratio */
+}
+
+.topPerformer {
+    grid-area: top-performer;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
