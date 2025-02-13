@@ -16,7 +16,7 @@ function Login({ setIsAuthenticated }) {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://thedwm.co.uk/api.php', { 
+            const response = await axios.post('https://thedwm.co.uk/api.php', { 
                 username: username,
                 password: password
             });

@@ -61,3 +61,46 @@ body, html {
     color: #d9534f; /* Red color for error messages */
     margin-top: 10px;
 }
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px; /* Smaller logo on mobile */
+    }
+
+    .form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .input {
+        padding: 8px; /* Smaller padding for input fields on mobile */
+        font-size: 0.9em; /* Reduce font size for better fit */
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 0.9em; /* Reduce button font size on mobile */
+    }
+
+    .message {
+        font-size: 0.85em; /* Smaller error message text */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px; /* Further reduce logo size for very small screens */
+    }
+
+    .form {
+        padding: 10px; /* Minimize form padding */
+    }
+
+    .input, .button {
+        font-size: 0.85em; /* Smaller text for input and button */
+    }
+
+    .message {
+        font-size: 0.8em; /* Further reduce error message text */
+    }
+}

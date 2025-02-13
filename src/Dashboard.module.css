@@ -1,14 +1,19 @@
+/* General Styles */
 .dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Desktop Layout */
+.desktopLayout {
     display: grid;
     grid-template-areas: 
         "quick-links whats-new client-call"
         "recommended-material recommended-material top-performer";
-    grid-template-columns: 1fr 2fr 1fr; /* First row ratio: 1:2:1 */
-    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .quickLinks {
@@ -25,7 +30,7 @@
 
 .recommendedMaterial {
     grid-area: recommended-material;
-    grid-column: span 2; /* Span 2 columns to match the ratio */
+    grid-column: span 2;
 }
 
 .topPerformer {
@@ -47,4 +52,66 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+/* Tablet Layout */
+.tabletLayout {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Mobile Layout */
+.mobileLayout {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobileButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    background-color: #9bc560;
+    color: #ffffff;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mobileButton:hover {
+    background-color: #7ea744;
+}
+
+/* Show content below each button when active */
+.mobileLayout > div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .desktopLayout {
+        display: none; /* Hide desktop layout on tablet */
+    }
+
+    .tabletLayout {
+        display: grid; /* Show tablet layout */
+    }
+}
+
+@media (max-width: 768px) {
+    .desktopLayout, .tabletLayout {
+        display: none; /* Hide desktop and tablet layouts on mobile */
+    }
+
+    .mobileLayout {
+        display: flex; /* Show mobile layout on small screens */
+    }
 }

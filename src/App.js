@@ -8,6 +8,7 @@ import Training from './Training';
 import EnergyServices from './Training/EnergyServices';
 import BroadbandServices from './Training/BroadbandServices';
 import AddAccount from './AddAccount/AddAccount';
+import ImpactSection from './ImpactSection/ImpactSection';
 import Navbar from './Navbar';
 import { UserProvider } from './UserContext'; // Import UserProvider
 
@@ -56,6 +57,12 @@ function App() {
                         } 
                     />
                     <Route 
+                        path="/impactsection" 
+                        element={
+                            isAuthenticated ? <ImpactSection /> : <Navigate to="/" />
+                        } 
+                    />
+                    <Route 
                         path="/sp-onboarding" 
                         element={
                             isAuthenticated ? <div>SP Onboarding Page</div> : <Navigate to="/" />
@@ -73,32 +80,35 @@ export default App;
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Login from './Login';
 // import Dashboard from './Dashboard';
-// import Training from './Training'; // Import the new Training component
+// import Training from './Training';
 // import Navbar from './Navbar';
 // import EnergyServices from './Training/EnergyServices';
 // import BroadbandServices from './Training/BroadbandServices';
 // import AddAccount from './AddAccount/AddAccount';
+// import ImpactSection from './ImpactSection/ImpactSection';
+
 // import { UserProvider } from './UserContext';
+// // import PageTrackingWrapper from './PageTrackingWrapper';
 
 // function App() {
-//     return (
-//         <UserProvider>
-//             <Router>
-//                 <Navbar />
-//                 <Routes>
-//                     <Route path="/" element={<Login />} />
-//                     <Route path="/dashboard" element={<Dashboard />} />
-//                     <Route path="/training" element={<Training />} /> {/* Use the Training component */}
-//                     <Route path="/sp-onboarding" element={<div>SP Onboarding Page</div>} />
-//                     <Route path="/training/energy-services" element={<EnergyServices />} />
-//                     <Route path="/training/broadband-services" element={<BroadbandServices />} />
-//                     <Route path="/addaccount" element={<AddAccount />} />
-//                 </Routes>
-//             </Router>
-//         </UserProvider>
-//     );
+//   return (
+//     <UserProvider>
+//       <Router>
+//           <Navbar />
+//           <Routes>
+//             <Route path="/" element={<Login />} />
+//             <Route path="/dashboard" element={<Dashboard />} />
+//             <Route path="/training" element={<Training />} />
+//             <Route path="/sp-onboarding" element={<div>SP Onboarding Page</div>} />
+//             <Route path="/training/energy-services" element={<EnergyServices />} />
+//             <Route path="/training/broadband-services" element={<BroadbandServices />} />
+//             <Route path="/addaccount" element={<AddAccount />} />
+//             <Route path="/impactsection" element={<ImpactSection />} />
+//           </Routes>
+//       </Router>
+//     </UserProvider>
+//   );
 // }
 
 // export default App;
-
 

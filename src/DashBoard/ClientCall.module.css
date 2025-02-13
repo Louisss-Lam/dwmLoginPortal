@@ -1,21 +1,31 @@
+.clientCallContainer {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 h2 {
   font-size: 1.8rem;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .linkBoxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between boxes */
+  gap: 20px;
+  justify-content: center;
 }
 
 .linkBox {
   background-color: #91b460;
   color: #ffffff;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
-  flex: 1 1 calc(50% - 20px); /* Make them responsive with a 2-column layout */
+  flex: 1 1 calc(50% - 20px); /* Two-column layout on larger screens */
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -32,10 +42,70 @@ h2 {
 }
 
 .linkBox a {
-  text-decoration: none; /* Remove underline */
-  color: #ffffff; /* Ensure link text color matches */
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .linkBox a:hover {
-  text-decoration: none; /* Ensure underline doesn't appear on hover */
+  text-decoration: none;
+}
+
+/* Tablet Responsive Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .clientCallContainer {
+    padding: 28px;
+    max-width: 900px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+    display: none;
+  }
+
+  .linkBoxes {
+    gap: 18px;
+  }
+
+  .linkBox {
+    flex: 1 1 calc(50% - 15px); /* Adjusted for tablet two-column layout */
+    padding: 18px;
+    background-color: #889ace;
+    border-radius: 20px;
+  }
+
+  .linkBox:hover {
+    transform: translateY(-5px);
+    background-color: #5a6a9b;
+  }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .clientCallContainer {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    display: none;
+  }
+
+  .linkBoxes {
+    gap: 15px; /* Smaller gap on mobile */
+  }
+
+  .linkBox {
+    flex: 1 1 100%;
+        padding: 20px;
+        background-color: #889ace;
+        border-radius: 20px;
+  }
+
+  .linkBox:hover {
+    transform: translateY(-5px);
+    background-color: #5a6a9b;
+}
+
 }

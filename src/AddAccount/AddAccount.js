@@ -18,7 +18,7 @@ const AddAccount = () => {
         }
 
         try {
-            const response = await axios.post('http://thedwm.co.uk/create-user.php', {
+            const response = await axios.post('https://thedwm.co.uk/create-user.php', {
                 username,
                 password,
             });

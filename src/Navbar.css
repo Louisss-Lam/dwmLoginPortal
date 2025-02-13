@@ -1,56 +1,52 @@
+/* General Styling */
 .navbar {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Desktop Version Styling */
+.navbar-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff; /* White background color */
-    padding: 15px 30px; /* More padding for a comfortable layout */
-    color: #333; /* Darker text color for contrast */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
-    border-radius: 8px; /* Rounded corners */
-    margin: 10px 20px; /* Margin to separate navbar from other content */
-    position: sticky; /* Make navbar stick to the top */
-    top: 0; /* Position it at the top */
-    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
-    gap: 50px; /* Gap between logo and links */
+    gap: 50px;
 }
 
 .navbar-logo {
-    width: 100px; /* Adjust size of the logo */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.navbar-menu {
-    display: flex;
-    gap: 40px; /* Increase gap between links */
+    width: 100px;
+    height: auto;
 }
 
 .nav-link {
-    color: #333; /* Dark text color for visibility */
+    color: #333;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    /* text-decoration: underline; */
-    color: #8fc641; /* Blue color on hover for interactivity */
+    color: #8fc641;
 }
 
 .navbar-right {
     font-weight: 500;
-    margin-left: auto; /* Push the user greeting to the right */
-    color: #333; /* Dark text color for visibility */
+    color: #333;
 }
 
 .logout-button {
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: #8fc641; /* Primary color */
+    background-color: #8fc641;
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,5 +55,90 @@
 }
 
 .logout-button:hover {
-    background-color: #75b61a; /* Darker shade on hover */
+    background-color: #75b61a;
 }
+
+.logout-button-slide {
+    margin-left: 0px;
+    padding: 5px 10px;
+    background-color: #8fc641;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Mobile Version Styling */
+.navbar-mobile {
+    display: none;
+}
+
+/* Sidebar (Slide-in Menu) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.sidebar-link:hover {
+    color: #8fc641;
+}
+
+.close-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Toggle Menu Button */
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Hide Desktop Navbar on Mobile */
+    .navbar-desktop {
+        display: none;
+    }
+
+    /* Show Mobile Navbar */
+    .navbar-mobile {
+        display: block;
+    }
+
+    /* Adjust logo and toggle layout */
+    .navbar-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
