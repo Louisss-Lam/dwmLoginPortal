@@ -4,6 +4,7 @@ import PostImage1 from '../Graphic/liam.jpg';
 import PostImage2 from '../Graphic/Product knowledge impact - liam tustin.jpg';
 import PostImage3 from '../Graphic/Providing value outside of price impact - liam tustin.jpg';
 import PostImage4 from '../Graphic/FUGI.jpg';
+import PostImage5 from '../Graphic/steak.jpeg';
 
 const ImpactSection = () => {
   const [showModal, setShowModal] = useState(false);
@@ -36,6 +37,13 @@ const ImpactSection = () => {
       image: PostImage4,
       title: 'F.U.G.I',
       description: 'A System for building more impulse.',
+      colleague: 'Liam Tustin',
+    },
+    {
+      id: 5,
+      image: PostImage5,
+      title: 'Sell the sizzle, not the steak',
+      description: 'Built around selling the benefits of the product, not just price.',
       colleague: 'Liam Tustin',
     },
   ];

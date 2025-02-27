@@ -9,6 +9,7 @@ import EnergyServices from './Training/EnergyServices';
 import BroadbandServices from './Training/BroadbandServices';
 import AddAccount from './AddAccount/AddAccount';
 import ImpactSection from './ImpactSection/ImpactSection';
+import Qa from './QA/Qa';
 import Navbar from './Navbar';
 import { UserProvider } from './UserContext'; // Import UserProvider
 
@@ -68,6 +69,12 @@ function App() {
                             isAuthenticated ? <div>SP Onboarding Page</div> : <Navigate to="/" />
                         } 
                     />
+                    <Route 
+                        path="/qa" 
+                        element={
+                            isAuthenticated ? <Qa /> : <Navigate to="/" />
+                        } 
+                    />
                 </Routes>
             </Router>
         </UserProvider>
@@ -86,6 +93,7 @@ export default App;
 // import BroadbandServices from './Training/BroadbandServices';
 // import AddAccount from './AddAccount/AddAccount';
 // import ImpactSection from './ImpactSection/ImpactSection';
+// import Qa from './QA/Qa';
 
 // import { UserProvider } from './UserContext';
 // // import PageTrackingWrapper from './PageTrackingWrapper';
@@ -104,6 +112,7 @@ export default App;
 //             <Route path="/training/broadband-services" element={<BroadbandServices />} />
 //             <Route path="/addaccount" element={<AddAccount />} />
 //             <Route path="/impactsection" element={<ImpactSection />} />
+//             <Route path="/qa" element={<Qa />} />
 //           </Routes>
 //       </Router>
 //     </UserProvider>

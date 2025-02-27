@@ -70,6 +70,13 @@ function QuickLinks() {
                         Trainer's Questionnaire
                     </a>
                 </div>
+                <div className={styles.linkBox}>
+                    <Link 
+                        to="/qa" 
+                    >
+                        QA
+                    </Link>
+                </div>
             </div>
         </div>
     );
