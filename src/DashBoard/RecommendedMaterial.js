@@ -5,6 +5,11 @@ const RecommendedMaterial = () => {
   const [visibleItems, setVisibleItems] = useState(4); // State to manage visible items
   const recommendationData = [
     {
+      title: 'UNTAPPED podcast',
+      image: 'https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/30/d8/da/30d8dad3-e385-d23c-61a6-ec685af93f33/mza_16338586423036854529.jpeg/1200x1200bf.webp',
+      link: 'https://open.spotify.com/show/0RxsgH2rGo40esXKht3A7o?si=e0722207bfaa477e&nd=1&dlsi=5e6167ae126a49d6',
+    },
+    {
       title: 'The Diary Of A CEO with Steven Bartlett',
       image: 'https://m.media-amazon.com/images/I/41NlQGjBq3L._SL500_.jpg',
       link: 'https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=c524e021f5504083&nd=1&dlsi=1a4382cef2c44ba9',

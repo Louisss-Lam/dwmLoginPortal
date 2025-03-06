@@ -8,6 +8,7 @@ import EAC from '../Graphic/EAC.jpg';
 import SalesDevice from '../Graphic/SalesDevice.jpg';
 import SalesRecording from '../Graphic/SalesRecordingScorecard.jpg';
 import KCB from '../Graphic/KCB.jpg';
+import Face from '../Graphic/Face.jpg';
 
 const Qa = () => {
   return (
@@ -15,7 +16,7 @@ const Qa = () => {
           <h1 className='training-title'>QA</h1>
                    <div className="training-grid">
                <div className="training-item">
-                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/02/SP-Quality-Protection-Process.pdf" target="_blank" rel="noopener noreferrer">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/Quality-Protection-Process.pdf" target="_blank" rel="noopener noreferrer">
                          <img src={SP_QPP} alt="Training PowerPoint 1" className="training-thumbnail" />
                      </a>
                     <p className="training-description">SP - Quality Protection Process</p>
@@ -67,6 +68,12 @@ const Qa = () => {
                          <img src={KCB} alt="warmHome" className="training-thumbnail" />
                      </a>
                     <p className="training-description">ScottishPower Key Customer Benefits</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/02/SP-FACE-Training.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Face} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">SP - FACE Training</p>
                 </div>
             </div>
         </div>
