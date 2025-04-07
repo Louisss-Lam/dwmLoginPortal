@@ -9,6 +9,7 @@ import SalesDevice from '../Graphic/SalesDevice.jpg';
 import SalesRecording from '../Graphic/SalesRecordingScorecard.jpg';
 import KCB from '../Graphic/KCB.jpg';
 import Face from '../Graphic/Face.jpg';
+import Easy from '../Graphic/Easy_Compliance.jpg';
 
 const Qa = () => {
   return (
@@ -23,7 +24,7 @@ const Qa = () => {
                  </div>
 
                 <div className="training-item">
-                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/02/Scottish-Power-Sales-training.-Picth-only-1.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/Scottish-Power-Sales-training.-02.04.25-Pitch.pdf" target="_blank" rel="noopener noreferrer">
                          <img src={SP_training} alt="Training PowerPoint 2" className="training-thumbnail" />
                      </a>
                     <p className="training-description">Scottish Power Sales Pitch training</p>
@@ -74,6 +75,12 @@ const Qa = () => {
                          <img src={Face} alt="warmHome" className="training-thumbnail" />
                      </a>
                     <p className="training-description">SP - FACE Training</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/Easy-Compliance-April-2025.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Easy} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Easy Compliance</p>
                 </div>
             </div>
         </div>

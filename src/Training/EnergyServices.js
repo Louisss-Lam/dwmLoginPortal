@@ -12,7 +12,7 @@ const EnergyServices = () => {
           <h1 className='training-title'>Energy Services</h1>
                    <div className="training-grid">
                <div className="training-item">
-                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/02/Scottish-Power-Sales-training.-Picth-only.pdf" target="_blank" rel="noopener noreferrer">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/Scottish-Power-Sales-training.-02.04.25-Pitch.pdf" target="_blank" rel="noopener noreferrer">
                          <img src={Training1} alt="Training PowerPoint 1" className="training-thumbnail" />
                      </a>
                     <p className="training-description">Sales Pitch Training</p>

@@ -12,12 +12,12 @@ const WhatsNew = () => {
       <div className="whatsnew-wrapper desktop-only">
         <div className="whatsnew-container">
           <div className="whatsnew-card">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/24_02_25-League-Table.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/17_03_25-League-Table.pdf" target="_blank" rel="noopener noreferrer">
               <img src={WeeklyLeaderboard} alt="A Box" className="whatsnew-image" />
             </a>
           </div>
           <div className="whatsnew-card">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/01/DWM-PDF-Q4-Newsletter.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/DWM-Q1-2025-Newsletter-compressed.pdf" target="_blank" rel="noopener noreferrer">
               <img src={NewsLetter} alt="B Box" className="whatsnew-image" />
             </a>
           </div>
@@ -38,12 +38,12 @@ const WhatsNew = () => {
       <div className="whatsnew-wrapper tablet-only">
         <div className="whatsnew-container-tablet">
           <div className="whatsnew-card-tablet">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/24_02_25-League-Table.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/17_03_25-League-Table.pdf" target="_blank" rel="noopener noreferrer">
               <img src={WeeklyLeaderboard} alt="A Box" className="whatsnew-image" />
             </a>
           </div>
           <div className="whatsnew-card-tablet">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/01/DWM-PDF-Q4-Newsletter.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/DWM-Q1-2025-Newsletter-compressed.pdf" target="_blank" rel="noopener noreferrer">
               <img src={NewsLetter} alt="B Box" className="whatsnew-image" />
             </a>
           </div>
@@ -64,12 +64,12 @@ const WhatsNew = () => {
       <div className="whatsnew-wrapper mobile-only">
         <div className="whatsnew-container-mobile">
           <div className="whatsnew-card-mobile">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/24_02_25-League-Table.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/03/17_03_25-League-Table.pdf" target="_blank" rel="noopener noreferrer">
               <img src={WeeklyLeaderboard} alt="A Box" className="whatsnew-image" />
             </a>
           </div>
           <div className="whatsnew-card-mobile">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/01/DWM-PDF-Q4-Newsletter.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/DWM-Q1-2025-Newsletter-compressed.pdf" target="_blank" rel="noopener noreferrer">
               <img src={NewsLetter} alt="B Box" className="whatsnew-image" />
             </a>
           </div>
