@@ -10,6 +10,8 @@ import SalesRecording from '../Graphic/SalesRecordingScorecard.jpg';
 import KCB from '../Graphic/KCB.jpg';
 import Face from '../Graphic/Face.jpg';
 import Easy from '../Graphic/Easy_Compliance.jpg';
+import Compliance from '../Graphic/compliance_update.jpg';
+import Boiler from '../Graphic/Boiler_Care.jpg';
 
 const Qa = () => {
   return (
@@ -81,6 +83,18 @@ const Qa = () => {
                          <img src={Easy} alt="warmHome" className="training-thumbnail" />
                      </a>
                     <p className="training-description">Easy Compliance</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-Brief-Representing-ScottishPower-010525-PDF.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Compliance} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Compliance update Representing ScottishPower</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-Brief-Boiler-Care-Scripting-Change-Popup-Venue-010525-PDF.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Boiler} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Boiler Care - Scripting Change</p>
                 </div>
             </div>
         </div>
