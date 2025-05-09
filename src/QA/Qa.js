@@ -12,7 +12,9 @@ import Face from '../Graphic/Face.jpg';
 import Easy from '../Graphic/Easy_Compliance.jpg';
 import Compliance from '../Graphic/compliance_update.jpg';
 import Boiler from '../Graphic/Boiler_Care.jpg';
-
+import Field from '../Graphic/Field_Safety.jpg';
+import EasyCompliance from '../Graphic/Easy_Compliance_Incentive.jpg';
+import TariffUpdate from '../Graphic/Tariff_update.jpg';
 const Qa = () => {
   return (
     <div className="energy-services-page">
@@ -95,6 +97,25 @@ const Qa = () => {
                          <img src={Boiler} alt="warmHome" className="training-thumbnail" />
                      </a>
                     <p className="training-description">Boiler Care - Scripting Change</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-Brief-Health-and-Safety-Field-Awareness-090525.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Field} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Field Safety - May 2025</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-brief-Easy-Compliance-Incentive-090525.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={EasyCompliance} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Easy Compliance Incentive - May 2025</p>
+                </div>
+                <div className="training-item">
+                    <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-Brief-Tariff-update-Pop-Up-Venue-080525.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={TariffUpdate} alt="warmHome" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Tariff update & Key Customer Benefits - May 2025
+                    </p>
                 </div>
             </div>
         </div>
