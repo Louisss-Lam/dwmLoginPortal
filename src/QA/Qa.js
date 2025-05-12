@@ -15,6 +15,7 @@ import Boiler from '../Graphic/Boiler_Care.jpg';
 import Field from '../Graphic/Field_Safety.jpg';
 import EasyCompliance from '../Graphic/Easy_Compliance_Incentive.jpg';
 import TariffUpdate from '../Graphic/Tariff_update.jpg';
+import AgentBrief from '../Graphic/Agent_Brief.jpg';
 const Qa = () => {
   return (
     <div className="energy-services-page">
@@ -117,6 +118,12 @@ const Qa = () => {
                     <p className="training-description">Tariff update & Key Customer Benefits - May 2025
                     </p>
                 </div>
+                <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-Brief.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={AgentBrief} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Open Door Version 1.70.1</p>
+                 </div>
             </div>
         </div>
   )
