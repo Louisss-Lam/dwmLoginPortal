@@ -16,6 +16,7 @@ import Field from '../Graphic/Field_Safety.jpg';
 import EasyCompliance from '../Graphic/Easy_Compliance_Incentive.jpg';
 import TariffUpdate from '../Graphic/Tariff_update.jpg';
 import AgentBrief from '../Graphic/Agent_Brief.jpg';
+import PowerPlay from '../Graphic/Power_Play.jpg';
 const Qa = () => {
   return (
     <div className="energy-services-page">
@@ -123,6 +124,12 @@ const Qa = () => {
                          <img src={AgentBrief} alt="Training PowerPoint 1" className="training-thumbnail" />
                      </a>
                     <p className="training-description">Agent Brief - Open Door Version 1.70.1</p>
+                 </div>
+                 <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/05/Agent-brief-Power-Play-Winner-April-25.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={PowerPlay} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Power Play Winner April</p>
                  </div>
             </div>
         </div>
