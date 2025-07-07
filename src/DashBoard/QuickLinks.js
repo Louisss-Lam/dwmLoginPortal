@@ -77,6 +77,16 @@ function QuickLinks() {
                         QA
                     </Link>
                 </div>
+                <div className={styles.linkBox}>
+                    <a 
+                        href="https://form.jotform.com/dontwastemoney/dwm-change-of-bank-details-form" 
+                        rel="noopener noreferrer"
+                        className={styles.link}
+
+                    >
+                        Change of bank details Jotform
+                    </a>
+                </div>
             </div>
         </div>
     );

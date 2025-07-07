@@ -19,6 +19,11 @@ import AgentBrief from '../Graphic/Agent_Brief.jpg';
 import PowerPlay from '../Graphic/Power_Play.jpg';
 import AddressSearch from '../Graphic/Address_search.jpg';
 import PowerSaver from '../Graphic/Agent_Brief_160525.jpg';
+import Compliance_intro from '../Graphic/Compliance_intro.jpg';
+import Compliance_call from '../Graphic/Compliance_call.jpg';
+import Compliance_call_2 from '../Graphic/compliance_call_2.jpg';
+import Price_cap from '../Graphic/price_cap.jpg';
+import Power_play_winner from '../Graphic/Power_play_winner.jpg';
 
 const Qa = () => {
   return (
@@ -146,6 +151,42 @@ const Qa = () => {
                      </a>
                     <p className="training-description">Agent Brief - Power Saver Milestone</p>
                  </div>
+                 <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/06/Agent-Brief-Easy-Compliance-Reminder-270525-At-Home.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Compliance_intro} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Easy Compliance Reminder 270525 At Home</p>
+                 </div>
+                 <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/06/Agent-Brief-Easy-Compliance-Reminder-270525-Venue.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Compliance_intro} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Easy Compliance Reminder 270525 Venue</p>
+                 </div>
+                 <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/06/Agent-Brief-Easy-Compliance-Brief-Validation-call-280525.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Compliance_call} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Easy Compliance Brief - Validation call 280525</p>
+                 </div>
+                 <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/06/Agent-Brief-Easy-Compliance-Brief-Validation-call-290525.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Compliance_call_2} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Easy Compliance Brief - Validation call 290525</p>
+                 </div>
+                 <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/06/Agent-Brief-Price-cap-changes-PopUp.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Price_cap} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent Brief - Price cap changes PopUp</p>
+                </div>
+                <div className="training-item">
+                     <a href="https://yourdwm.co.uk/wp-content/uploads/2025/06/Agent-brief-Power-Play-Winner-May-25.pdf" target="_blank" rel="noopener noreferrer">
+                         <img src={Power_play_winner} alt="Training PowerPoint 1" className="training-thumbnail" />
+                     </a>
+                    <p className="training-description">Agent brief - Power Play Winner May 25</p>
+                </div>
             </div>
         </div>
   )

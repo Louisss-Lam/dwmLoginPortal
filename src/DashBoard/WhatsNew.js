@@ -17,7 +17,7 @@ const WhatsNew = () => {
             </a>
           </div>
           <div className="whatsnew-card">
-            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/04/DWM-Q1-2025-Newsletter-compressed.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://yourdwm.co.uk/wp-content/uploads/2025/07/DWM-2025-Q2-Newsletter-compressed.pdf" target="_blank" rel="noopener noreferrer">
               <img src={NewsLetter} alt="B Box" className="whatsnew-image" />
             </a>
           </div>
